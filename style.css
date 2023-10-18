@@ -1,0 +1,232 @@
+/* this section is right before .btn*/
+
+@keyframes fadeIn
+{
+    0%
+    {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.box-container{
+    display: inline-block;
+    background: var(--black);
+    margin-top: 1rem;
+    color: var(--white);
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+.btn:hover
+{
+    background: var(--main-color);
+}
+
+
+
+
+/* heading */
+
+.heading-title
+{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color:var(--black);
+}
+
+
+
+
+
+
+
+
+
+
+.home
+{
+    padding:0;
+}
+
+.home .slide
+{
+    text-align:center;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: 60rem;
+}
+
+.home .slide .content
+{
+    width:85 rem;
+    display: none;
+
+}
+
+.home .swiper-slide-active .content{
+    display:inline-block;
+}
+
+.home .slide .content span
+{
+    display: block;
+    font-size: 2.2 rem;
+    color: var(--light-whilte);
+    padding-bottom: 1rem;
+    animation:.2s linear backwards .2s;
+}
+
+.home .slide .content h3{
+    font-size: 6vw;
+    color: var(--white);
+    text-transform: uppercase;
+    line-height: 1;
+    text-shadow:var(--text-shadow);
+    padding: 1rem 0;
+    animation: fadIn .2s linear backwards .4s;
+
+}
+
+.home .slide .content .btn
+{
+    animation: fadIn .2s linear backwards .6s;
+}
+
+.home .swiper-button-next,
+.home .swiper-button-prev
+{
+    top: inherit;
+    left: inherit;
+    bottom: 0;
+    right: 0;
+    height: 7rem;
+    width:7 rem;
+    background:var(--white);
+    color: var(--black);
+
+}
+
+.home .swiper-button-next:hover,
+.home .swiper-button-prev:hover{
+    background: var(--main-color);
+    color: var(--whilte);
+}
+
+.home .swiper-button-next::after,
+.home .swiper-button-prev::after
+{
+    font-size: 2rem;
+}
+
+.home .swiper-button-prev{
+    right: 7rem;
+}
+
+
+
+
+
+/* services */
+.services .box-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(16rem,1fr));
+    gap: 1.5rem;
+}
+
+.services .box-containser .box
+{
+    padding: 3rem 2rem;
+    text-align: center;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.services .box-containser .box:hover
+{
+    background: var(--black);
+}
+
+.services .box-containser .box img
+{
+    height: 7rem;
+}
+
+.services .box-containser .box h3
+{
+    color:var(--white);
+    font-size: 1.7rem;
+    padding-top: 1rem;
+}
+
+
+
+/* media queries */
+
+@media(max-width:450px)
+{
+    html {
+        font-sizse: 50%;
+    }
+    .heading-title
+    {
+        font-size: 3.5rem;
+    }
+}
+
+/* this section is a part of @media(max-width:991px)*/
+.home .slide .content h3{
+    font-sizse: 10vw;
+}
+/* ends here*/
+
+/* this goes right begore footer section*/
+
+.home-about
+{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-about .image 
+{
+    flex: 1 1 41rem;
+}
+
+.home-about .img 
+{
+    width: 100%;
+} 
+
+.home-about .content 
+{
+    flex: 1 1 41 rem;
+    padding : 3rem;
+    background: var(--light-bg);
+}
+
+.home-about .content h3
+{
+    font-size: 3rem;
+    color:var(--black);
+}
+
+.home-about .content p
+{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2;
+    color:var(--black);
+}
+
+
+
